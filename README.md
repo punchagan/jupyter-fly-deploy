@@ -31,7 +31,11 @@ There's no OAuth and user management. Unexpected things could happen if multiple
 
 7. Run `fly deploy` to deploy your changes.
 
-8. You can [setup the app to be automatically
+8. You can share links to individual notebooks using the token you set above, as follows:
+
+       https://<app-name>.fly.dev/notebooks/<dir>/<notebook_name>.ipynb?token=some-long-secret
+
+9. (Optional) You can [setup the app to be automatically
    deployed](https://fly.io/docs/launch/continuous-deployment-with-github-actions/)
    on future pushes to GitHub using GitHub actions by creating a Fly token and
    adding it to the repository's settings. The GitHub workflow file is already
