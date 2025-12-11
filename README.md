@@ -19,8 +19,8 @@ There's no OAuth and user management. Unexpected things could happen if multiple
 
    Answer `y` to use existing config.
 
-5. Remove `project_a/` and `project_b/` directories and create directories for
-   your own notebooks. The directories should contain a requirements.txt if it
+5. Remove `project_a/` directories and create separate directories for your own
+   notebooks. The directories should contain a `requirements.txt` if it
    contains a notebook directory. It can be empty if you don't need any
    additional dependencies other than Jupyter notebook.
 
