@@ -24,9 +24,14 @@ There's no OAuth and user management. Unexpected things could happen if multiple
    contains a notebook directory. It can be empty if you don't need any
    additional dependencies other than Jupyter notebook.
 
-6. Run `fly deploy` to deploy your changes.
+6. The Jupyter starts each time with a random token which could be a problem,
+   if you'd like to share URLs with others. You could instead set the
+   JUPYTER_TOKEN environment variable using the `fly secrets set
+   JUPYTER_TOKEN="some-long-secret"` command.
 
-7. You can [setup the app to be automatically
+7. Run `fly deploy` to deploy your changes.
+
+8. You can [setup the app to be automatically
    deployed](https://fly.io/docs/launch/continuous-deployment-with-github-actions/)
    on future pushes to GitHub using GitHub actions by creating a Fly token and
    adding it to the repository's settings. The GitHub workflow file is already

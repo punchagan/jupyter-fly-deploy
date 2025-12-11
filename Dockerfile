@@ -21,4 +21,4 @@ RUN scripts/setup-kernels.sh
 
 EXPOSE 8888
 
-CMD ["jupyter", "notebook", "--no-browser", "--ServerApp.ip=0.0.0.0", "--ServerApp.port=8888", "--ServerApp.token=''"]
+CMD ["jupyter", "notebook", "--no-browser", "--ServerApp.ip=0.0.0.0", "--ServerApp.port=8888"]
